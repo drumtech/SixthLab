@@ -1,0 +1,4 @@
+#Файл конфигурации для сервиса
+
+WORD=ATTENTION
+LOG=/var/log/attention.log

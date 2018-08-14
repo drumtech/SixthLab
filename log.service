@@ -1,0 +1,9 @@
+[Unit]
+Description=log service
+
+[Service]
+Type=notify
+EnvironmentFile=/etc/sysconfig/attention
+Restart=on-success
+RestartSec=30
+ExecStart=/usr/bin/grep $WORD $LOG
